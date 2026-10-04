@@ -115,18 +115,18 @@ blockquote cite{display:block;margin-top:8px;font-family:var(--sans);font-size:.
 
 /* ===== VIDEO: miniatura clicable ===== */
 .video-container{
-  display:block;                  /* ⬅️ CLAVE: la <a> debe ser bloque */
+  display:block;
   position:relative;
   width:100%;
   max-width:800px;
-  padding-bottom:56.25%;          /* 16:9 */
+  padding-bottom:56.25%;
   height:0;
   margin:26px auto;
   border-radius:10px;
   overflow:hidden;
   box-shadow:0 8px 26px rgba(16,34,43,.15);
   cursor:pointer;
-  background:#0f0f0f;              /* fondo si la miniatura no carga */
+  background:#0f0f0f;
   transition:transform .3s ease, box-shadow .3s ease;
 }
 .video-container:hover{
@@ -204,7 +204,13 @@ blockquote cite{display:block;margin-top:8px;font-family:var(--sans);font-size:.
 .equipo-inner{max-width:1100px;margin:0 auto;text-align:center}
 .equipo-seccion h2{font-size:clamp(1.8rem,3vw,2.2rem);margin-bottom:12px}
 .equipo-sub{font-family:var(--sans);font-size:1rem;color:var(--suave);margin-bottom:50px}
-.equipo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;max-width:960px;margin:0 auto}
+.equipo-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:24px;
+  max-width:720px;                /* ⬅️ reducido: ahora son 3 tarjetas */
+  margin:0 auto;
+}
 .miembro{background:#fff;padding:32px 22px;border-radius:10px;border:1px solid var(--linea);text-align:center;transition:transform .3s ease,box-shadow .3s ease}
 .miembro:hover{transform:translateY(-6px);box-shadow:0 16px 36px rgba(16,34,43,.1)}
 .miembro-avatar{width:76px;height:76px;margin:0 auto 18px;border-radius:50%;background:linear-gradient(135deg,var(--marca) 0%,var(--marca-osc) 100%);color:#fff;display:grid;place-items:center;font-family:var(--sans);font-size:1.5rem;font-weight:700;letter-spacing:.5px;box-shadow:0 10px 22px rgba(14,124,134,.28)}
@@ -229,11 +235,11 @@ footer p{margin:4px 0}
   .portada h1{font-size:2rem}
   .marca{font-size:1.1rem}
   .menu a{font-size:.95rem;padding:12px 14px}
-  .equipo-grid{grid-template-columns:1fr 1fr;gap:16px}
-  .miembro{padding:22px 12px}
-  .miembro-avatar{width:60px;height:60px;font-size:1.2rem;margin-bottom:12px}
-  .miembro h4{font-size:1rem}
-  .miembro p{font-size:.7rem}
+  .equipo-grid{grid-template-columns:1fr;gap:16px;max-width:320px}
+  .miembro{padding:26px 16px}
+  .miembro-avatar{width:64px;height:64px;font-size:1.3rem;margin-bottom:14px}
+  .miembro h4{font-size:1.1rem}
+  .miembro p{font-size:.75rem}
   .video-container .play-btn{width:64px;height:46px}
   .video-container .play-btn::before{border-left:18px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent}
 }
@@ -266,8 +272,8 @@ footer p{margin:4px 0}
   <h1>Funciones ejecutivas y aprendizaje</h1>
   <p class="bajada">Las habilidades cognitivas que dirigen nuestra atención, pensamiento y conducta, y por qué marcan el rendimiento de los estudiantes en el aula.</p>
   <div class="firma">
-    <div class="avatares"><span>DS</span><span>KT</span><span>HV</span><span>CS</span></div>
-    <div><strong>Dustin Salinas, Karla Tinoco, Heidy Vizuete y Cristina Sani</strong>Universidad Estatal Amazónica · Unidad 4 · 2025 · 6 min de lectura</div>
+    <div class="avatares"><span>DS</span><span>KT</span><span>HV</span></div>
+    <div><strong>Dustin Salinas, Karla Tinoco y Heidy Vizuete</strong>Universidad Estatal Amazónica · Unidad 4 · 2025 · 6 min de lectura</div>
   </div>
 </div>
 
@@ -368,11 +374,6 @@ footer p{margin:4px 0}
         <h4>Heidy Vizuete</h4>
         <p>Autora</p>
       </div>
-      <div class="miembro">
-        <div class="miembro-avatar">CS</div>
-        <h4>Cristina Sani</h4>
-        <p>Autora</p>
-      </div>
     </div>
   </div>
 </section>
@@ -380,7 +381,7 @@ footer p{margin:4px 0}
 <footer>
   <h3>Funciones ejecutivas y aprendizaje</h3>
   <p>Blog académico · Guía Práctica N.° 4 · Pedagogía, componente práctico-experimental</p>
-  <p>Elaborado por Dustin Salinas, Karla Tinoco, Heidy Vizuete y Cristina Sani</p>
+  <p>Elaborado por Dustin Salinas, Karla Tinoco y Heidy Vizuete</p>
   <p>Universidad Estatal Amazónica (UEA) · Unidad 4 · 2025</p>
 </footer>
 
