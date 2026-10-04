@@ -193,8 +193,21 @@ blockquote cite{display:block;margin-top:8px;font-family:var(--sans);font-size:.
   color:var(--suave);
   text-align:center;
   margin-top:4px;
+  margin-bottom:32px;   /* separa un video del siguiente */
 }
 .video-respaldo a{color:var(--marca-osc);text-decoration:underline;font-weight:600}
+
+/* etiqueta opcional del video (Video 1 / Video 2) */
+.video-titulo{
+  font-family:var(--sans);
+  font-size:.9rem;
+  font-weight:600;
+  color:var(--marca-osc);
+  text-transform:uppercase;
+  letter-spacing:1.2px;
+  margin:38px 0 -6px;
+  text-align:center;
+}
 
 .refs{list-style:none;font-size:1rem}
 .refs li{padding:0 0 0 2em;text-indent:-2em;margin-bottom:14px;color:var(--suave)}
@@ -208,7 +221,7 @@ blockquote cite{display:block;margin-top:8px;font-family:var(--sans);font-size:.
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
   gap:24px;
-  max-width:720px;                /* ⬅️ reducido: ahora son 3 tarjetas */
+  max-width:720px;
   margin:0 auto;
 }
 .miembro{background:#fff;padding:32px 22px;border-radius:10px;border:1px solid var(--linea);text-align:center;transition:transform .3s ease,box-shadow .3s ease}
@@ -329,10 +342,21 @@ footer p{margin:4px 0}
 
   <section id="video">
     <h2>Video: actividades para entrenarlas</h2>
-    <p>Este video presenta actividades lúdicas para fortalecer las funciones ejecutivas en niños y niñas en edad escolar. Los juegos trabajan la <em>memoria de trabajo, el control inhibitorio, la flexibilidad cognitiva y la atención sostenida</em>, y se pueden aplicar en el aula y en el hogar.</p>
+    <p>Los siguientes videos presentan actividades lúdicas para fortalecer las funciones ejecutivas en niños y niñas en edad escolar. Los juegos trabajan la <em>memoria de trabajo, el control inhibitorio, la flexibilidad cognitiva y la atención sostenida</em>, y se pueden aplicar en el aula y en el hogar.</p>
     
-    <a class="video-container" href="https://www.youtube.com/watch?v=1gUCu2e_JiM" target="_blank" rel="noopener" aria-label="Ver video en YouTube">
-      <img src="https://img.youtube.com/vi/1gUCu2e_JiM/hqdefault.jpg" alt="Miniatura del video: actividades para funciones ejecutivas" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/1gUCu2e_JiM/mqdefault.jpg';">
+    <!-- VIDEO 1 -->
+    <p class="video-titulo">Video 1</p>
+    <a class="video-container" href="https://youtu.be/GhfmR0fIjfs?si=6em5TZpqZRBLWb9d" target="_blank" rel="noopener" aria-label="Ver video 1 en YouTube">
+      <img src="https://img.youtube.com/vi/GhfmR0fIjfs/hqdefault.jpg" alt="Miniatura del video 1: actividades para funciones ejecutivas" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/GhfmR0fIjfs/mqdefault.jpg';">
+      <span class="play-btn"></span>
+      <span class="etiqueta">YouTube</span>
+    </a>
+    <p class="video-respaldo">Al hacer clic en la miniatura se abrirá el video en YouTube.</p>
+
+    <!-- VIDEO 2 -->
+    <p class="video-titulo">Video 2</p>
+    <a class="video-container" href="https://youtu.be/FtvRJjFUkuM?si=RW65jdxWPMttg0Kp" target="_blank" rel="noopener" aria-label="Ver video 2 en YouTube">
+      <img src="https://img.youtube.com/vi/FtvRJjFUkuM/hqdefault.jpg" alt="Miniatura del video 2: actividades para funciones ejecutivas" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/FtvRJjFUkuM/mqdefault.jpg';">
       <span class="play-btn"></span>
       <span class="etiqueta">YouTube</span>
     </a>
